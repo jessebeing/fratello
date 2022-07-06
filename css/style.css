@@ -94,6 +94,16 @@ footer {
     background: #F5F5F5;
 }
 
+#logo-bottom {
+    min-height: 130px;
+    background: url(../imagens/Grupo\ 334.png);
+    background-repeat: no-repeat;
+}
+
+#redes-sociais {
+    
+}
+
 
 @media(max-width: 1440px) {
 
