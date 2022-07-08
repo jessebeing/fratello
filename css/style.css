@@ -37,7 +37,6 @@
 }
 
 #principal p {
-    width: 476px;
     margin: 13px auto;
     font-family: 'Roboto Regular', sans-serif;
     font-size: 24px;
@@ -101,7 +100,7 @@ footer {
     font-family: 'Roboto Regular', sans-serif;
     font-size: 16px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
 }
@@ -117,12 +116,10 @@ footer {
     margin-right: 30px;
 }
 
-#logo-footer {
+#div-logo-footer {
     width: 100%;
     max-width: 124px;
-    background: url(../imagens/Grupo\ 334.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin-bottom: 20px;
 }
 
 #logo-instagram {
@@ -176,6 +173,12 @@ footer {
     #banner-bottom {
         min-height: 27vw;
     }
+
+    #div-logo-footer {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media(max-width: 1306px) {
@@ -199,6 +202,7 @@ footer {
     #segunda-coluna {
         margin-left: auto;
     }
+
 }
 
 @media(max-width: 767px){
@@ -208,5 +212,39 @@ footer {
 
     #principal p{
         font-size: 1.2em;
+    }
+
+    #terceiro-bloco, #quarto-bloco {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 540px){
+
+    #container {
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    #segundo-bloco, #quarto-bloco{
+        padding-top: 10px;
+    }
+
+    #terceiro-bloco{
+        padding-top: 10px;
+        max-width: 100%;
+    }
+
+    #quarto-bloco b {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 320px){
+    #imagens, #principal p{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
