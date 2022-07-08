@@ -79,12 +79,26 @@
 }
 
 #banner-bottom {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    min-height: 509px;
+    min-height: 390px;
     background: url(../imagens/Grupo\ 3433.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain;
+}
+
+#texto-banner-bottom {
+    width: 100%;
+    max-width: 500px;
+    min-height: 303px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-right: 150px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    padding-right: 10px;
 }
 
 footer {
@@ -122,12 +136,17 @@ footer {
     margin-bottom: 20px;
 }
 
+#redes-sociais {
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    max-width: 116px;
+}
+
 #logo-instagram {
     width: 100%;
     max-width: 20px;
     min-height: 20px;
-    background: url(../imagens/Caminho\ 3.png);
-    background-repeat: no-repeat;
     margin-top: 10px;
 }
 
@@ -135,8 +154,6 @@ footer {
     width: 100%;
     max-width: 20px;
     min-height: 20px;
-    background: url(../imagens/Componente\ 30\ –\ 1.png);
-    background-repeat: no-repeat;
     margin-top: 10px;
 }
 
@@ -144,8 +161,6 @@ footer {
     width: 100%;
     max-width: 20px;
     min-height: 20px;
-    background: url(../imagens/Caminho\ 1.png);
-    background-repeat: no-repeat;
     margin-top: 10px;
 }
 
@@ -171,7 +186,20 @@ footer {
     }
 
     #banner-bottom {
-        min-height: 27vw;
+        min-height: 509px;
+    }
+
+    #texto-banner-bottom {
+        width: 100%;
+        max-width: 500px;
+        min-height: 303px;
+        margin-top: auto;
+        margin-bottom: 50px;
+        margin-right: 5px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        padding-right: 10px;
     }
 
     #div-logo-footer {
@@ -203,10 +231,23 @@ footer {
         margin-left: auto;
     }
 
+    #banner-bottom {
+        background-position: initial;
+        background-size: cover;
+        min-height: 309px;
+    }
+
+    #texto-banner-bottom {
+        min-height: 130px;
+        max-width: 327px;
+        font-size: 20px;
+    }
+
 }
 
 @media(max-width: 767px){
     #principal h1 {
+        min-height: 0px;
         font-size: 2em;
     }
 
@@ -218,6 +259,18 @@ footer {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    #banner-bottom {
+        background-size: cover;
+        min-height: 200px;
+    }
+
+    #texto-banner-bottom {
+        min-height: 0px;
+        max-width: 305px;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 540px){
@@ -227,8 +280,24 @@ footer {
         justify-content: space-around;
     }
 
+    #banner-bottom {
+        background-position: center;
+    }
+
+    #texto-banner-bottom {
+        font-size: 15px;
+        margin-bottom: 25px;
+        max-width: 228px;
+    }
+
+    #container {
+        display: block;
+    }
+
     #segundo-bloco, #quarto-bloco{
         padding-top: 10px;
+        flex-direction: column;
+        align-content: center;
     }
 
     #terceiro-bloco{
@@ -239,6 +308,7 @@ footer {
     #quarto-bloco b {
         margin-right: 15px;
         margin-left: 15px;
+        display: block;
     }
 }
 
@@ -246,5 +316,15 @@ footer {
     #imagens, #principal p{
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    #texto-banner-bottom {
+        font-size: 12px;
+        margin-bottom: 6px;
+        max-width: 118px;
+    }
+
+    #banner-bottom {
+        background-position: center;
     }
 }
