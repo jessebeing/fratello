@@ -143,21 +143,7 @@ footer {
     max-width: 116px;
 }
 
-#logo-instagram {
-    width: 100%;
-    max-width: 20px;
-    min-height: 20px;
-    margin-top: 10px;
-}
-
-#logo-twitter {
-    width: 100%;
-    max-width: 20px;
-    min-height: 20px;
-    margin-top: 10px;
-}
-
-#logo-facebook {
+.logo-redes-sociais {
     width: 100%;
     max-width: 20px;
     min-height: 20px;
